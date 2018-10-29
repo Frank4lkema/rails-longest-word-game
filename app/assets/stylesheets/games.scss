@@ -1,0 +1,40 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.display-flex{
+  display: flex;
+  justify-content: space-between;
+  background-color: #3679AA;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  p {
+    color: white ;
+    font-size: 32px;
+    font-family: 'Mali', cursive;
+  }
+}
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+}
+
+.display-flex-form{
+  display: flex;
+  justify-content:flex-start;
+.long-bar{
+  width:77%;
+  font-size:32px;
+  // border: 1px solid black;
+}
+.btn{
+  border: 0px solid black;
+  font-size:32px;
+}
+}
+
+
+
+// font-family: 'Mali', cursive;
+// font-family: 'Krub', sans-serif;

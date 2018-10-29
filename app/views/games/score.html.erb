@@ -1,0 +1,7 @@
+<h1>Your Game score is!</h1>
+<h2>Your score is <%= @game_results[:score] %></h2>
+<h2><%= @game_results[:message] %></h2>
+<h3>It took you <%= @game_results[:time].to_i %> seconds</h3>
+
+<%= link_to "Start again", new_path  %>
+

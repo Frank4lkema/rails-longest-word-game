@@ -1,0 +1,21 @@
+
+<div class="container">
+  <h1>New Game</h1>
+  <div class="display-flex">
+    <% @letters.each do |letter| %>
+    <p><%= letter %></p>
+    <% end %>
+  </div>
+
+
+  <form action="/score" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <div class="display-flex-form">
+      <input  type="text" name="word" placeholder="Type your word here!" class = "long-bar">
+      <%= hidden_field_tag :start_time, @time_start %>
+      <%= hidden_field_tag :grid, @letters %>
+      <input type="submit" class="btn">
+    </div>
+  </form>
+
+</div>
